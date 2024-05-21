@@ -1,0 +1,23 @@
+[project]
+name = "azure-openai-demo"
+version = "0.1.0"
+description = "Demo illustrating the use of Azure OpenAI Generative AI"
+authors = [
+    {name = "michael.harrison", email = "michael.harrison@koerber-supplychain.com"},
+]
+dependencies = [
+    "openai>=1.26.0",
+    "python-dotenv>=1.0.1",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pre-commit>=3.7.0",
+]

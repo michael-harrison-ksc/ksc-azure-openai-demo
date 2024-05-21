@@ -1,0 +1,24 @@
+# Setup:
+#
+# pip install pre-commit
+# pre-commit install
+# pre-commit run --all-files
+#
+# To Skip Checks:
+#
+# git commit --no-verify
+
+repos:
+  # export python requirements
+  - repo: https://github.com/pdm-project/pdm
+    rev: 2.14.0 # a PDM release exposing the hook
+    hooks:
+      - id: pdm-export
+        # command arguments, e.g.:
+        args: ['-o', 'requirements.txt', '--without-hashes']
+        files: ^pdm.lock$
+
+  - repo: https://github.com/pdm-project/pdm
+    rev: 2.14.0 # a PDM release exposing the hook
+    hooks:
+    - id: pdm-lock-check
