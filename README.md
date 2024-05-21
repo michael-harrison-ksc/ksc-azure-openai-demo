@@ -16,7 +16,7 @@ Alternatively, you can query them using the Python SDK -- see hte instructions b
 Instrctions for setting up the Python environment:
 * Clone the repo to your local directory:
 <br>
-  `git clone https://highjumpvso.visualstudio.com/DefaultCollection/AI-AA/_git/azure-openai-demo`
+  `git clone https://github.com/chriswmercer/ksc-azure-openai-demo.git`
 <br><br>
 * Change the working directory to this repository:
 <br>
