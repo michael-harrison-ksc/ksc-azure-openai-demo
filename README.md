@@ -15,25 +15,25 @@ Alternatively, you can query them using the Python SDK -- see hte instructions b
 ### Python Environment
 Instrctions for setting up the Python environment:
 * Clone the repo to your local directory:
-<br>
-  `git clone https://github.com/chriswmercer/ksc-azure-openai-demo.git`
+
+   `git clone https://github.com/chriswmercer/ksc-azure-openai-demo.git`
 <br><br>
 * Change the working directory to this repository:
-<br>
-  `cd azure-openai-demo`
+
+   `cd azure-openai-demo`
 <br><br>
 * Set up a Python virtual environment:
-<br>
+
   `python3 -m venv .venv`
 <br><br>
 * And activate it:
-<br>
+
    **Windows:** `.\.venv\Scripts\activate`
-<br>
+  
    **Linux/MacOS:** `source .venv/bin/activate` 
 <br><br>
 * Install the requirements
-<br>
+
   `python -m pip install -r requirements.txt`
 <br><br>
 * Create a file at the top level directory of the repo called `.env`
@@ -44,5 +44,5 @@ Instrctions for setting up the Python environment:
     AZURE_OPENAI_API_KEY=YOUR-API-KEY
     ```
 * You should then be able to run the demonstration script, that illusatrates how to query the API for one of the Azure OpenAI deployments. 
-<br>
+
     `python ./src/azure_openai_demo/main.py`
