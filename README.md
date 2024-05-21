@@ -1,0 +1,1 @@
+# ksc-azure-openai-demo
